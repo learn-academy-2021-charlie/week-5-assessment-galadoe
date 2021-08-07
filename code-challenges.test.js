@@ -17,6 +17,13 @@
 
 // a) Create a test with an expect statement using the variables provided.
 
+describe('codedMess', () => {
+    test('returns the coded messages converted', () => {
+
+    })
+
+})
+
 var secretCodeWord1 = "Lackadaisical"
 // Expected output: "L4ck4d41s1c4l"
 var secretCodeWord2 = "Gobbledygook"
@@ -28,11 +35,18 @@ var secretCodeWord3 = "Eccentric"
 
 // b) Create the function that makes the test pass.
 
-
+//create function - str
+//split the string and assign it to a var
+//use a for loop or higher order function to iterate through it
+//conditional, if a,e,i,o,u replace with 4,3,1,0
+//return new arr with joined
 
 // --------------------2) Create a function that takes in an array and returns all the words that contain the letter a.
 
 // a) Create a test with an expect statement using the variable provided.
+
+
+
 
 var arrayOfWords1 = ["Apple", "Banana", "Plum", "Orange", "Kiwi"]
 // Expected output: ["Apple", "Banana", "Orange"]
