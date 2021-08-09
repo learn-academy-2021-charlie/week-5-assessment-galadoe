@@ -33,27 +33,42 @@ describe('codedMessage', () => {
 })
 
 
-
 // b) Create the function that makes the test pass.
 
 //create a function - str
 // split str and assign to var
 //iterate using for loop or higher order function
-//condition, if a,e,i,o,u replace with 4,3,1,0
+//condition, if a,e,i,o, replace with 4,3,1,0
 // return new arr and join the str
 
-const codedMessage = (str) => {
-  let newStr = []
-  let strSplit = str.split("")
-  for(let i = 0; i < strSplit.length; i++){
-    if(strSplit[i] === "a"){
-      strSplit[i] = 4
-      console.log(strSplit[i]);
-    }else if(strSplit[i] === "e"){
-      strSplit[i] = 3
-    }
-  }
+// const codedMessage = (str) => {
+//   let newStr = []
+//   let strSplit = str.split("")
+//   for(let i = 0; i < strSplit.length; i++){
+//     if(strSplit[i] === "a"){
+//       newStr.push("4")
+//     }else if(strSplit[i] === "e"){
+//       newStr.push("3")
+//     }else if(strSplit[i] === 'i'){
+//       newStr.push("1")
+//     }else if(strSplit[i] === "o"){
+//       newStr.push("0")
+//     }else{
+//       newStr.push(strSplit[i])
+//     }
+//   }
+// }
+
+
+const codedMessage = (string) =>{
+  let letterA = string.replace(/[aA]/g, "4")
+  let letterE = letterA.replace(/[eE]/g, "3")
+  let letterI = letterE.replace(/[iI]/g, "1")
+  let letterO = letterI.replace(/[oO]/g, "0")
+  return letterO
 }
+
+
 
 // --------------------2) Create a function that takes in an array and returns all the words that contain the letter a.
 
@@ -73,19 +88,17 @@ describe('letterA', () => {
 
 
 
-
-
-
 // b) Create the function that makes the test pass.
+//declare a function- onlyA
+//parameter- array
+//use .filter or .map to iterate through the array 
+//return value that includes a
+//inputs and outputs- arrayOfWords1 --> ["Apple", "Banana", "Orange"], arrayOfWords2 --> ["Mango", "Apricot", "Peach"]
 
 const letterA = (arr) => {
-  let newArr = []
-  for(let i=0; i < arr.length; i++){
-    if(arr[i].includes('A') || arr[i].includes('a'))
-      return newArr.push(arr[i])
-  }
-  // return newArr
+  return arr.filter(value => value.toLowerCase().includes("a"))
 }
+  // return newArr
 
 // --------------------3) Create a function that takes in an array of 5 numbers and determines whether or not the array is a “full house”. A full house is exactly one pair and one three of a kind.
 
@@ -110,5 +123,11 @@ describe('fullHouse', () => {
 
 // b) Create the function that makes the test pass.
 const fullHouse = (arr) => {
-  
+    let sortedArr = arr.sort((a, b) => a - b)
+    if (sortedArr[0] == sortedArr[2] && sortedArr[3] == sortedArr[4]||
+        sortedArr[0] == sortedArr[1] && sortedArr[2] == sortedArr[4] ){
+            return true
+    } else {
+        return false
+    }
 }
