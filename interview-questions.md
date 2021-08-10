@@ -7,9 +7,11 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. Rails follows an MVC pattern. What does that mean?
 
-  Your answer: From the little I understand and what I believe it is, it allows us to ruby in a certain order
+  Your answer: From the little I understand and what I believe it is, it allows us to ruby in a certain order. Models view controller
 
   Researched answer: a pattern used to decouple user-interface (view), data(model), and application logic (controller). this pattern helps to achieve separation of concerns
+
+  *model, view, controller, framework that gives structure and organization to your code, architecture
 
 
 
@@ -19,6 +21,8 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Researched answer: types of database that stores and provides access to data points that are related to one another
 
+  *database with rows and columns, columns hold attributes of the data and rows are instances, non-relational database NOSQL (not only sql)
+
 
 
 3. What is object-relational mapping?
@@ -27,6 +31,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Researched answer: a programming technique for converting data between incompatible type systems using object-oriented programming languages
 
+  *convert data between two imcompatible languages, ORM - Active Record
 
 
 4. What is a gem?
@@ -35,6 +40,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Researched answer: is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries
 
+  *ruby package manager, iterate code 
 
 
 5. What are primary keys? Why are they important?
@@ -43,12 +49,14 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Researched answer: a special relational database table column designated to uniquely identify each table record
 
+  *column is a unique identifer, ensures unique rows
+
 
 
 ## Looking Ahead: Terms for Next Week
 Research and define the following terms to the best of your ability.
 
-1. RESTful routes: a route that provieds mapping from HTTP verbs to controller CRUD actions (create, read, update, delete)
+1. RESTful routes: a route that provides mapping from HTTP verbs to controller CRUD actions (create, read, update, delete)
 
 2. JSON: (JavaScript Object Notation) a lightweight data-interchange format
 
